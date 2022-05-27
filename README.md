@@ -1,6 +1,7 @@
 # JavaWeb
 <p>an online shopping website written by Servlet, JavaBean and JSP</p>
 <p>做了一个叫做咸鱼的小型电商网站</p>
+<p>有数据可视化、数据批量导出、销量预测、用户个性化推荐等功能^-^</p>
 <h2>学号：201930341069</h2>
 <h2>姓名：何旭怡</h2>
 
