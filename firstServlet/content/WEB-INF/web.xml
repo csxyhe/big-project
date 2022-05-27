@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  
+  <filter>
+  	<filter-name>EncodingFilter</filter-name>
+  	<filter-class>xianyu.web.filter.EncodingFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>EncodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>ModifyPasswordServlet</servlet-name>
+    <servlet-class>xianyu.web.servlet.client.ModifyPasswordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ModifyPasswordServlet</servlet-name>
+    <url-pattern>/modifyPassword</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>xianyu.web.servlet.client.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>RecommendServlet</servlet-name>
+    <servlet-class>xianyu.web.servlet.client.RecommendServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RecommendServlet</servlet-name>
+    <url-pattern>/recommend</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>GetBuyRecordServlet</servlet-name>
+    <servlet-class>xianyu.web.servlet.client.GetBuyRecordServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetBuyRecordServlet</servlet-name>
+    <url-pattern>/getBuyRecord</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+    <servlet-name>FindOrderItemServlet</servlet-name>
+    <servlet-class>xianyu.web.servlet.client.FindOrderItemServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FindOrderItemServlet</servlet-name>
+    <url-pattern>/findOrderItem</url-pattern>
+  </servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>xianyu.web.servlet.client.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MyAccountServlet</servlet-name>
+		<servlet-class>xianyu.web.servlet.client.MyAccountServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MyAccountServlet</servlet-name>
+		<url-pattern>/myAccount</url-pattern>
+	</servlet-mapping>
+ 
+  	
+  	<servlet>
+  		<servlet-name>FindProductByIdServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.client.FindProductByIdServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>FindProductByIdServlet</servlet-name>
+  		<url-pattern>/findProductById</url-pattern>
+  	</servlet-mapping>  
+  
+  	<servlet>
+  		<servlet-name>LogoutServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.client.LogoutServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>LogoutServlet</servlet-name>
+  		<url-pattern>/logout</url-pattern>
+  	</servlet-mapping>
+  	
+  	
+  	
+  	
+  	
+  	<servlet>
+  		<servlet-name>AddProductServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.business.AddProductServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>AddProductServlet</servlet-name>
+  		<url-pattern>/addProduct</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>ShowAbnormalityServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.manager.ShowAbnormalityServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>ShowAbnormalityServlet</servlet-name>
+  		<url-pattern>/showAbnormality</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>FindProductByManyCondition_BServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.business.FindProductByManyCondition_BServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>FindProductByManyCondition_BServlet</servlet-name>
+  		<url-pattern>/findProductByManyCondition_B</url-pattern>
+  	</servlet-mapping>  	
+  	
+  	<servlet>
+  		<servlet-name>EditProductServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.business.EditProductServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>EditProductServlet</servlet-name>
+  		<url-pattern>/editProduct</url-pattern>
+  	</servlet-mapping>
+  	
+ 	<servlet>
+  		<servlet-name>DeleteProductServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.business.DeleteProductServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>DeleteProductServlet</servlet-name>
+  		<url-pattern>/deleteProduct</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>ShowBrowseServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.business.ShowBrowseServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>ShowBrowseServlet</servlet-name>
+  		<url-pattern>/showBrowse</url-pattern>
+  	</servlet-mapping>
+  	
+  	
+  	
+  	<servlet>
+  		<servlet-name>CancelRightServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.manager.CancelRightServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>CancelRightServlet</servlet-name>
+  		<url-pattern>/cancelRight</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>GetOperationServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.manager.GetOperationServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>GetOperationServlet</servlet-name>
+  		<url-pattern>/getOperation</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>GetUserFigureServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.manager.GetUserFigureServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>GetUserFigureServlet</servlet-name>
+  		<url-pattern>/getUserFigure</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>getLoginoutServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.manager.getLoginoutServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>getLoginoutServlet</servlet-name>
+  		<url-pattern>/getLoginout</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>productsalesStatisticsServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.manager.productsalesStatisticsServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>productsalesStatisticsServlet</servlet-name>
+  		<url-pattern>/productsalesStatistics</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>categorysalesStatisticsServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.manager.categorysalesStatisticsServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>categorysalesStatisticsServlet</servlet-name>
+  		<url-pattern>/categorysalesStatistics</url-pattern>
+  	</servlet-mapping>
+ 
+  	<servlet>
+  		<servlet-name>ShowBusinessServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.manager.ShowBusinessServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>ShowBusinessServlet</servlet-name>
+  		<url-pattern>/showBusiness</url-pattern>
+  	</servlet-mapping>
+
+ 	<servlet>
+  		<servlet-name>ListProductServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.business.ListProductServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>ListProductServlet</servlet-name>
+  		<url-pattern>/listProduct</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>BusinessStatisticsServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.manager.BusinessStatisticsServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>BusinessStatisticsServlet</servlet-name>
+  		<url-pattern>/businessStatistics</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>FindProductByManyConditionServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.manager.FindProductByManyConditionServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>FindProductByManyConditionServlet</servlet-name>
+  		<url-pattern>/findProductByManyCondition</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>ShowProductByPageServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.client.ShowProductByPageServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>ShowProductByPageServlet</servlet-name>
+  		<url-pattern>/showProductByPage</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>MenuSearchServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.client.MenuSearchServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>MenuSearchServlet</servlet-name>
+  		<url-pattern>/menuSearch</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>ApplyForBusinessServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.client.ApplyForBusinessServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>ApplyForBusinessServlet</servlet-name>
+  		<url-pattern>/applyForBusiness</url-pattern>
+  	</servlet-mapping>
+  	
+ 	<servlet>
+  		<servlet-name>AddCartServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.client.AddCartServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>AddCartServlet</servlet-name>
+  		<url-pattern>/addCart</url-pattern>
+  	</servlet-mapping>
+  	
+	<servlet>
+  		<servlet-name>ChangeCartServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.client.ChangeCartServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>ChangeCartServlet</servlet-name>
+  		<url-pattern>/changeCart</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>CreateOrderServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.client.CreateOrderServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>CreateOrderServlet</servlet-name>
+  		<url-pattern>/createOrder</url-pattern>
+  	</servlet-mapping>
+  	
+ 	<servlet>
+  		<servlet-name>ShowStatisticsServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.business.ShowStatisticsServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>ShowStatisticsServlet</servlet-name>
+  		<url-pattern>/showStatistics</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>OrderManageServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.business.OrderManageServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>OrderManageServlet</servlet-name>
+  		<url-pattern>/orderManage</url-pattern>
+  	</servlet-mapping>
+
+  	<servlet>
+  		<servlet-name>PredictSalesServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.business.PredictSalesServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>PredictSalesServlet</servlet-name>
+  		<url-pattern>/predictSales</url-pattern>
+  	</servlet-mapping>
+
+  	<servlet>
+  		<servlet-name>showApplicationServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.manager.showApplicationServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>showApplicationServlet</servlet-name>
+  		<url-pattern>/showApplication</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>UpdateRightServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.manager.UpdateRightServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>UpdateRightServlet</servlet-name>
+  		<url-pattern>/updateRight</url-pattern>
+  	</servlet-mapping>
+  	
+  	<servlet>
+  		<servlet-name>GetBrowseServlet</servlet-name>
+  		<servlet-class>xianyu.web.servlet.manager.GetBrowseServlet</servlet-class>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>GetBrowseServlet</servlet-name>
+  		<url-pattern>/getBrowse</url-pattern>
+  	</servlet-mapping>
+  	  	
+  	<listener>
+  		<listener-class>
+  			xianyu.web.listener.BrowseTimeListener
+  		</listener-class>
+  	</listener>
+  	
+  	<listener>
+  		<listener-class>
+  			xianyu.web.listener.DestroyListener
+  		</listener-class>
+  	</listener>
+  	
+</web-app>
